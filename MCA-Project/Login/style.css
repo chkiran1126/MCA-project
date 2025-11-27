@@ -1,0 +1,237 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Body styling */
+body {
+  background: linear-gradient(135deg, #b3ecff, #e6faff);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Outer container */
+.container {
+  width: 900px;
+  height: 550px;
+  background: #e8faff;
+  border-radius: 25px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  overflow: hidden;
+}
+
+/* Login box */
+.login-box {
+  flex: 1;
+  background: #fff;
+  border-radius: 25px;
+  margin: 20px;
+  padding: 40px 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-box h2 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #000;
+}
+
+/* Input box container */
+.input-box {
+  margin-bottom: 18px;
+  width: 100%;
+}
+
+/* Wrapper for input + icons */
+.field {
+  position: relative;
+  display: block;
+  height: 44px;
+  line-height: 44px;
+}
+
+/* Left lock/user icons */
+.field > i.fa-user,
+.field > i.fa-lock {
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  transform: translateY(-50%);
+  color: #777;
+  font-size: 16px;
+  pointer-events: none;
+}
+
+/* Right eye icon */
+.field > .toggle-pass {
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  transform: translateY(-50%);
+  color: #777;
+  cursor: pointer;
+  font-size: 16px;
+  transition: color 0.2s ease;
+}
+
+.field > .toggle-pass:hover {
+  color: #2b4eff;
+}
+
+/* Input styling */
+.field > input {
+  width: 100%;
+  height: 44px;
+  padding-left: 44px;
+  padding-right: 44px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: #f2f2f2;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+/* Password error text */
+#password-error {
+  color: red;
+  font-size: 13px;
+  margin-top: 6px;
+  display: none;
+}
+
+/* Remember & Forgot */
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.options label {
+  color: #444;
+}
+
+.options a {
+  text-decoration: none;
+  color: #2b4eff;
+}
+
+.options a:hover {
+  text-decoration: underline;
+}
+
+/* Login button */
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #020c3a;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: #051d75;
+}
+
+/* Register link */
+.register-text {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 15px;
+  color: #444;
+}
+
+.register-text a {
+  color: #2b4eff;
+  text-decoration: none;
+}
+
+.register-text a:hover {
+  text-decoration: underline;
+}
+
+/* Divider text */
+.or-text {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Social icons */
+.social-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  gap: 15px;
+}
+
+.social-login img {
+  width: 35px;
+  height: 35px;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: #fff;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.social-login img:hover {
+  transform: scale(1.1);
+  background: #f0f0f0;
+}
+
+/* Welcome image section */
+.welcome-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+
+.welcome-image img {
+  width: 350px;
+  max-width: 100%;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    width: 95%;
+    height: auto;
+  }
+
+  .welcome-image {
+    order: -1;
+    padding: 20px;
+  }
+
+  .welcome-image img {
+    width: 250px;
+  }
+
+  .login-box {
+    margin: 20px;
+    padding: 25px;
+  }
+}
