@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Page</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="login-box">
+      <h2>Login</h2>
+      <form>
+        <!-- Email Field -->
+        <div class="input-box">
+          <div class="field">
+            <i class="fa-solid fa-user"></i>
+            <input type="email" placeholder="abc12@gmail.com" required />
+          </div>
+        </div>
+
+        <!-- Password Field -->
+        <div class="input-box">
+          <div class="field">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" placeholder="Password" required />
+            <i class="fa-solid fa-eye-slash toggle-pass"></i>
+          </div>
+          <p id="password-error"></p>
+        </div>
+
+        <!-- Options -->
+        <div class="options">
+          <label><input type="checkbox" /> Remember Password</label>
+          <a href="#">Forget Password?</a>
+        </div>
+
+        <!-- Button -->
+        <button type="submit" class="btn">Login</button>
+
+        <p class="register-text">No account yet? <a href="#">Register</a></p>
+
+        <p class="or-text">Or Login With :</p>
+
+        <div class="social-login">
+          <img src="image/apple.png" alt="apple" />
+          <img src="image/facebook.png" alt="Facebook" />
+          <img src="image/twitter.png" alt="Twitter" />
+          <img src="image/google.png" alt="Google" />
+        </div>
+      </form>
+    </div>
+
+    <!-- Welcome Section -->
+    <div class="welcome-image">
+      <img src="image/Welcome-rafiki.png" alt="Welcome" />
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
